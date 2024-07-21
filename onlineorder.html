@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playwrite+CL:wght@100..400&display=swap" rel="stylesheet">
     <style>
         .container-fluid {
-            background-image: url("https://imgs.search.brave.com/fiibm6kZGDze_g05IWhtywqKeNQrvp9LGM6PykhZhFI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWNyZWF0/aXZlcy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTUvMDQv/Q3JlYXNlZC1XaGl0/ZS1QYXBlci1UZXh0/dXJlcy5qcGc");
+            background-image: url("https://imgs.search.brave.com/EAKlC13b-DAPz_TIMH3YS9FPwvzP7kKkn-0-6sEUrYI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjAy/MjQyNS5qcGc");
             height: 120px;
         }
         .footer-fluid {
@@ -44,16 +44,20 @@
         }
         body {
             background: rgb(255,255,255);
-            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+background: linear-gradient(71deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
         }
         .mb-4 {
             color: rgb(0, 0, 0);
+            font-size: 50px;
+            font-weight: bolder;
+            font-style: italic;
         }
-        .form-label{
-            font-size: x-large
+        .mb-3 {
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .form-select {
+            font-size: large;
         }
     </style>
 </head>
@@ -114,31 +118,37 @@
             <input type="tel" class="form-control" id="contactNumber" required>
         </div>
         <div class="mb-3">
-            <label for="foodGenre" class="form-label">Food Genre</label><br>
-            <label for="Drinks">Drinks:</label>
-            <select id="Drinks" name="Drinks">
-                <option value="select">None</option>
-                <option value="Cappuccino">Cappuccino</option>
-                <option value="Latte">Latte</option>
+            <label for="foodGenre" class="form-label">Food Order:</label>
             <div class="mb-3">
-                <label for="foodType2" class="form-label">Select Cake or Ice Cream</label>
-                <select multiple class="form-select" id="foodType2">
-                    <checkbox></checkbox>
-                    <option value="Ice Cream">Ice Cream</option>
+                <label for="foodType1" class="form-label">Select Drink</label>
+                <select class="form-select" id="foodType1">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Latte">Latte(₹349)</option>
+                    <option value="Cappuccino">Cappuccino(₹450)</option>
                 </select>
             </div>
             <div class="mb-3">
-                <label for="foodType3" class="form-label">Select Samosa or Pakora</label>
-                <select multiple class="form-select" id="foodType3">
-                    <option value="Samosa">Samosa</option>
-                    <option value="Pakora">Pakora</option>
+                <label for="foodType2" class="form-label">Select Snack</label>
+                <select class="form-select" id="foodType2">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Burger">Cream and Cheese Burger(₹249)</option>
+                    <option value="Sandwich">Ham and Cheese Sandwich(₹449)</option>
                 </select>
             </div>
             <div class="mb-3">
-                <label for="foodType4" class="form-label">Select Sandwich or Chips</label>
-                <select multiple class="form-select" id="foodType4">
-                    <option value="Sandwich">Sandwich</option>
-                    <option value="Chips">Chips</option>
+                <label for="foodType3" class="form-label">Select Indian Snack</label>
+                <select class="form-select" id="foodType3">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Pavbhaji">Pav-Bhaji(₹499)</option>
+                    <option value="FriedRice">Fried-Rice(₹599)</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="foodType4" class="form-label">Select Dessert</label>
+                <select class="form-select" id="foodType4">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Croissant">Croissant</option>
+                    <option value="Muffin">Blueberry Muffin</option>
                 </select>
             </div>
         </div>
